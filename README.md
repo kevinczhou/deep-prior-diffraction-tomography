@@ -15,7 +15,7 @@ Run this code using Python 3, with the following libraries installed:
 - matplotlib
 - jupyter
 
-This code should work with later versions of tensorflow (I've tested 1.14), but not with tensorflow 2, at least in its current state. The optimization gets a significant speedup with a GPU, so I recommend using one if you have one. Note that DP-DT can get memory intensive, as it needs to store both the diffraction tomography forward model and the 3D DIP. Thus, if your GPU doesn't have enough memory, try decreasing the field of view and/or the batch size. The default fields of view and batch sizes in the code can be supported by 16-GB GPU.
+After installing these libraries, start with the `run_DPDT.ipynb` jupyter notebook, which contains further instructions. This code should work with later versions of tensorflow (I've tested 1.14), but not with tensorflow 2, at least in its current state. The optimization gets a significant speedup with a GPU, so I recommend using one if you have one. Note that DP-DT can get memory intensive, as it needs to store both the diffraction tomography forward model and the 3D DIP. Thus, if your GPU doesn't have enough memory, try decreasing the field of view and/or the batch size. The default fields of view and batch sizes in the code can be supported by a 16-GB GPU.
 
 ## Citation
 If you find our code useful to your research, please consider citing the accompanying publication:
