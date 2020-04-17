@@ -2,8 +2,7 @@
 
 This repository contains python and tensorflow code that implements 3D diffraction tomography under a variety of priors/regularizers, including total variation (TV), positivity, and now, for the first time, the deep image prior (DIP). We call our technique deep prior diffraction tomography (DP-DT), which reparameterizes the reconstruction as the output of an *untrained* 3D convolutional neural network (CNN). We show that DP-DT outperforms traditional regularizers in terms of addressing the missing cone problem, which we demonstrate in a variety of samples and with two popular scattering models: the first Born approximation and the multi-slice model.
 
-For more information on implementation and results, see our arXiv preprint (https://arxiv.org/abs/1912.05330). The peer-reviewed article is currently in press in *Optics Express*.
-
+For more information on implementation and results, see our peer-reviewed paper at https://www.osapublishing.org/oe/abstract.cfm?uri=oe-28-9-12872 (or the arXiv version, https://arxiv.org/abs/1912.05330, which contains more simulation results in its appendix).
 ## Data
 We provide the raw multi-angle data stacks for all of our experimental results (Figs. 7-10). These include the 1-um bead sample, the 2-layer 2-um bead sample, and the starfish embryo sample, which can be downloaded from [here](https://doi.org/10.6084/m9.figshare.12081708) as `.mat` files (~150 MB each). The jupyter notebook assumes these files are stored in `DPDT_raw_data/` in the same directory as the python files.
 
@@ -20,4 +19,4 @@ After installing these libraries, start with the `run_DPDT.ipynb` jupyter notebo
 ## Citation
 If you find our code useful to your research, please consider citing the accompanying publication:
 
-TBD
+Kevin C. Zhou and Roarke Horstmeyer, "Diffraction tomography with a deep image prior," *Opt. Express* 28, 12872-12896 (2020)
